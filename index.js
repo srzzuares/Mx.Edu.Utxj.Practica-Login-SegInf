@@ -63,12 +63,12 @@ app.get('/login', (req, res) => {
     if (!auntheticated){
         req.session.auntheticated= true 
         res.json({
-            mensaje:"Estas Adentro"
+            mensaje:"Estas Adentro mi Terricola"
         })
         
     }else{
         res.json({
-            mensaje:"No Se pudo entrar"
+            mensaje:"Ya estas adentro Terricola"
         })
     }
 })
