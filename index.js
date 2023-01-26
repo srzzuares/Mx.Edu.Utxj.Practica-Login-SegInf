@@ -52,6 +52,16 @@ app.post('/login', (req, res) => {
     const { auntheticated } = req.session
     if (!auntheticated){
         req.session.auntheticated= true 
+        
+        
+    }else{
+        
+    }
+})
+app.get('/login', (req, res) => { 
+    const { auntheticated } = req.session
+    if (!auntheticated){
+        req.session.auntheticated= true 
         res.json({
             mensaje:"Estas Adentro"
         })
@@ -87,3 +97,7 @@ app.get('/', (req, res) => {
         token: KEY_SECRET
     })
 })
+
+
+
+/* Made for CsSuar */
